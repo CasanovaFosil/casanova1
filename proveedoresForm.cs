@@ -10,26 +10,11 @@ using System.Windows.Forms;
 
 namespace fernanda
 {
-    public partial class proveedoresForm : Form
+    public partial class proveedoresForm: Form
     {
         public proveedoresForm()
         {
             InitializeComponent();
-        }
-
-        private void proveedoresBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.proveedoresBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.postgresDataSet);
-
-        }
-
-        private void proveedoresForm_Load(object sender, EventArgs e)
-        {
-            // TODO: esta línea de código carga datos en la tabla 'postgresDataSet.proveedores' Puede moverla o quitarla según sea necesario.
-            this.proveedoresTableAdapter.Fill(this.postgresDataSet.proveedores);
-
         }
     }
 }
