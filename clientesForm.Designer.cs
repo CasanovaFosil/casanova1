@@ -1,6 +1,6 @@
 ﻿namespace fernanda
 {
-    partial class proveedoresForm
+    partial class clientesForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(proveedoresForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(clientesForm));
             System.Windows.Forms.Label nombreLabel;
             System.Windows.Forms.Label claveLabel;
             this.postgresDataSet = new fernanda.postgresDataSet();
-            this.proveedoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.proveedoresTableAdapter = new fernanda.postgresDataSetTableAdapters.proveedoresTableAdapter();
+            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clientesTableAdapter = new fernanda.postgresDataSetTableAdapters.clientesTableAdapter();
             this.tableAdapterManager = new fernanda.postgresDataSetTableAdapters.TableAdapterManager();
-            this.proveedoresBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.clientesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -48,15 +48,15 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.proveedoresBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.clientesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.claveTextBox = new System.Windows.Forms.TextBox();
             nombreLabel = new System.Windows.Forms.Label();
             claveLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.postgresDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proveedoresBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proveedoresBindingNavigator)).BeginInit();
-            this.proveedoresBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingNavigator)).BeginInit();
+            this.clientesBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
             // postgresDataSet
@@ -64,35 +64,35 @@
             this.postgresDataSet.DataSetName = "postgresDataSet";
             this.postgresDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // proveedoresBindingSource
+            // clientesBindingSource
             // 
-            this.proveedoresBindingSource.DataMember = "proveedores";
-            this.proveedoresBindingSource.DataSource = this.postgresDataSet;
+            this.clientesBindingSource.DataMember = "clientes";
+            this.clientesBindingSource.DataSource = this.postgresDataSet;
             // 
-            // proveedoresTableAdapter
+            // clientesTableAdapter
             // 
-            this.proveedoresTableAdapter.ClearBeforeFill = true;
+            this.clientesTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.categoriasTableAdapter = null;
-            this.tableAdapterManager.clientesTableAdapter = null;
+            this.tableAdapterManager.clientesTableAdapter = this.clientesTableAdapter;
             this.tableAdapterManager.entradasTableAdapter = null;
             this.tableAdapterManager.inventariosTableAdapter = null;
             this.tableAdapterManager.productosTableAdapter = null;
-            this.tableAdapterManager.proveedoresTableAdapter = this.proveedoresTableAdapter;
+            this.tableAdapterManager.proveedoresTableAdapter = null;
             this.tableAdapterManager.trabajadoresTableAdapter = null;
             this.tableAdapterManager.ubicacionesTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = fernanda.postgresDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // proveedoresBindingNavigator
+            // clientesBindingNavigator
             // 
-            this.proveedoresBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.proveedoresBindingNavigator.BindingSource = this.proveedoresBindingSource;
-            this.proveedoresBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.proveedoresBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.proveedoresBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clientesBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.clientesBindingNavigator.BindingSource = this.clientesBindingSource;
+            this.clientesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.clientesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.clientesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -104,17 +104,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.proveedoresBindingNavigatorSaveItem});
-            this.proveedoresBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.proveedoresBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.proveedoresBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.proveedoresBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.proveedoresBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.proveedoresBindingNavigator.Name = "proveedoresBindingNavigator";
-            this.proveedoresBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.proveedoresBindingNavigator.Size = new System.Drawing.Size(800, 25);
-            this.proveedoresBindingNavigator.TabIndex = 0;
-            this.proveedoresBindingNavigator.Text = "bindingNavigator1";
+            this.clientesBindingNavigatorSaveItem});
+            this.clientesBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.clientesBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.clientesBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.clientesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.clientesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.clientesBindingNavigator.Name = "clientesBindingNavigator";
+            this.clientesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.clientesBindingNavigator.Size = new System.Drawing.Size(800, 25);
+            this.clientesBindingNavigator.TabIndex = 0;
+            this.clientesBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -201,19 +201,19 @@
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
-            // proveedoresBindingNavigatorSaveItem
+            // clientesBindingNavigatorSaveItem
             // 
-            this.proveedoresBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.proveedoresBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("proveedoresBindingNavigatorSaveItem.Image")));
-            this.proveedoresBindingNavigatorSaveItem.Name = "proveedoresBindingNavigatorSaveItem";
-            this.proveedoresBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
-            this.proveedoresBindingNavigatorSaveItem.Text = "Guardar datos";
-            this.proveedoresBindingNavigatorSaveItem.Click += new System.EventHandler(this.proveedoresBindingNavigatorSaveItem_Click);
+            this.clientesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.clientesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("clientesBindingNavigatorSaveItem.Image")));
+            this.clientesBindingNavigatorSaveItem.Name = "clientesBindingNavigatorSaveItem";
+            this.clientesBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.clientesBindingNavigatorSaveItem.Text = "Guardar datos";
+            this.clientesBindingNavigatorSaveItem.Click += new System.EventHandler(this.clientesBindingNavigatorSaveItem_Click);
             // 
             // nombreLabel
             // 
             nombreLabel.AutoSize = true;
-            nombreLabel.Location = new System.Drawing.Point(366, 136);
+            nombreLabel.Location = new System.Drawing.Point(384, 72);
             nombreLabel.Name = "nombreLabel";
             nombreLabel.Size = new System.Drawing.Size(45, 13);
             nombreLabel.TabIndex = 1;
@@ -221,8 +221,8 @@
             // 
             // nombreTextBox
             // 
-            this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.proveedoresBindingSource, "nombre", true));
-            this.nombreTextBox.Location = new System.Drawing.Point(417, 133);
+            this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "nombre", true));
+            this.nombreTextBox.Location = new System.Drawing.Point(435, 69);
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(100, 20);
             this.nombreTextBox.TabIndex = 2;
@@ -230,7 +230,7 @@
             // claveLabel
             // 
             claveLabel.AutoSize = true;
-            claveLabel.Location = new System.Drawing.Point(366, 162);
+            claveLabel.Location = new System.Drawing.Point(384, 98);
             claveLabel.Name = "claveLabel";
             claveLabel.Size = new System.Drawing.Size(36, 13);
             claveLabel.TabIndex = 3;
@@ -238,13 +238,13 @@
             // 
             // claveTextBox
             // 
-            this.claveTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.proveedoresBindingSource, "clave", true));
-            this.claveTextBox.Location = new System.Drawing.Point(417, 159);
+            this.claveTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "clave", true));
+            this.claveTextBox.Location = new System.Drawing.Point(435, 95);
             this.claveTextBox.Name = "claveTextBox";
             this.claveTextBox.Size = new System.Drawing.Size(100, 20);
             this.claveTextBox.TabIndex = 4;
             // 
-            // proveedoresForm
+            // clientesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -253,15 +253,15 @@
             this.Controls.Add(this.nombreTextBox);
             this.Controls.Add(claveLabel);
             this.Controls.Add(this.claveTextBox);
-            this.Controls.Add(this.proveedoresBindingNavigator);
-            this.Name = "proveedoresForm";
-            this.Text = "proveedoresForm";
-            this.Load += new System.EventHandler(this.proveedoresForm_Load);
+            this.Controls.Add(this.clientesBindingNavigator);
+            this.Name = "clientesForm";
+            this.Text = "clientesForm";
+            this.Load += new System.EventHandler(this.clientesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.postgresDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proveedoresBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proveedoresBindingNavigator)).EndInit();
-            this.proveedoresBindingNavigator.ResumeLayout(false);
-            this.proveedoresBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingNavigator)).EndInit();
+            this.clientesBindingNavigator.ResumeLayout(false);
+            this.clientesBindingNavigator.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,10 +270,10 @@
         #endregion
 
         private postgresDataSet postgresDataSet;
-        private System.Windows.Forms.BindingSource proveedoresBindingSource;
-        private postgresDataSetTableAdapters.proveedoresTableAdapter proveedoresTableAdapter;
+        private System.Windows.Forms.BindingSource clientesBindingSource;
+        private postgresDataSetTableAdapters.clientesTableAdapter clientesTableAdapter;
         private postgresDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator proveedoresBindingNavigator;
+        private System.Windows.Forms.BindingNavigator clientesBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -285,7 +285,7 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton proveedoresBindingNavigatorSaveItem;
+        private System.Windows.Forms.ToolStripButton clientesBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox nombreTextBox;
         private System.Windows.Forms.TextBox claveTextBox;
     }
