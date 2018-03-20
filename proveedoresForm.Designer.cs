@@ -62,7 +62,7 @@
             // nombreLabel
             // 
             nombreLabel.AutoSize = true;
-            nombreLabel.Location = new System.Drawing.Point(366, 136);
+            nombreLabel.Location = new System.Drawing.Point(295, 140);
             nombreLabel.Name = "nombreLabel";
             nombreLabel.Size = new System.Drawing.Size(107, 13);
             nombreLabel.TabIndex = 1;
@@ -71,11 +71,11 @@
             // claveLabel
             // 
             claveLabel.AutoSize = true;
-            claveLabel.Location = new System.Drawing.Point(366, 162);
+            claveLabel.Location = new System.Drawing.Point(295, 162);
             claveLabel.Name = "claveLabel";
-            claveLabel.Size = new System.Drawing.Size(36, 13);
+            claveLabel.Size = new System.Drawing.Size(96, 13);
             claveLabel.TabIndex = 3;
-            claveLabel.Text = "clave:";
+            claveLabel.Text = "clave de producto:";
             // 
             // postgresDataSet
             // 
